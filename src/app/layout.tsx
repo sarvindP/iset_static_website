@@ -1,13 +1,13 @@
+import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
 import './globals.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import ContactFAB from '@/components/ContactFAB';
+import { SITE_URL } from '@/lib/metadata';
 
-export const metadata = {
-  title: 'iSET 2026 — International Skill Enhancement Training',
-  description:
-    'iSET 2026 — Register for the International Skill Enhancement Training conducted by IAME. Open for students LKG to Class XII.',
+export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {

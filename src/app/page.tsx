@@ -2,6 +2,14 @@ import Link from 'next/link';
 import StatsMarquee from '@/components/StatsMarquee';
 import HeroSlideshow from '@/components/HeroSlideshow';
 import HeroCurveDivider from '@/components/HeroCurveDivider';
+import { buildPageMetadata } from '@/lib/metadata';
+
+export const metadata = buildPageMetadata({
+  title: 'iSET 2026 by IAME — Register for Skill Enhancement',
+  description:
+    'Register for iSET 2026, IAME\'s flagship exam for students LKG to Class XII. Build reasoning, analytical skills, and exam confidence through a three-level programme.',
+  path: '/',
+});
 
 const REGISTER_URL = 'https://iameonline.com/login/index';
 
@@ -12,11 +20,11 @@ export default function HomePage() {
         <HeroSlideshow />
         <div className="absolute inset-0 bg-black/50" aria-hidden="true" />
         <div className="relative z-10 max-w-[1140px] mx-auto px-6 w-full text-center flex flex-col items-center">
-          <h1 className="text-white max-w-[14ch] mb-5 mx-auto text-[clamp(3rem,7vw,5.5rem)] font-bold">
-            Discover the <em className="text-white not-italic">Power</em> Within
+          <h1 className="text-white max-w-[18ch] mb-5 mx-auto text-[clamp(2.2rem,6vw,4.5rem)] font-bold">
+            iSET 2026 by IAME
           </h1>
           <p className="text-white text-[1.15rem] max-w-[48ch] mb-9 mx-auto">
-            International Skill Enhancement Training — a 20-year legacy of unlocking student potential from LKG to Class XII across India.
+            Discover the Power Within — International Skill Enhancement Training with a 20-year legacy of unlocking student potential from LKG to Class XII across India.
           </p>
           <div className="flex gap-4 flex-wrap justify-center">
             <a

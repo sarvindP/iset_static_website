@@ -1,17 +1,19 @@
 import PageHero from '@/components/PageHero';
 import GalleryGrid from '@/components/GalleryGrid';
+import { buildPageMetadata } from '@/lib/metadata';
 
-export const metadata = {
-  title: 'Gallery — iSET 2026',
+export const metadata = buildPageMetadata({
+  title: 'iSET 2026 Gallery — IAME Events & Award Ceremonies',
   description:
-    'View memories from iSET events, award ceremonies, and student celebrations. Explore highlights from past iSET programmes.',
-};
+    'Explore iSET event photos from IAME award ceremonies and student celebrations. View programme highlights and browse the full gallery on iameonline.com.',
+  path: '/gallery',
+});
 
 export default function GalleryPage() {
   return (
     <>
       <PageHero
-        title="Gallery"
+        title="iSET Event Gallery"
         description="Memories from iSET events, award ceremonies, and student celebrations."
         breadcrumbLabel="Gallery"
         imageSrc="/hero20.jpg"

@@ -1,10 +1,12 @@
 import PageHero from '@/components/PageHero';
+import { buildPageMetadata } from '@/lib/metadata';
 
-export const metadata = {
-  title: 'Question Bank — iSET 2026',
+export const metadata = buildPageMetadata({
+  title: 'iSET Question Bank by IAME — Sample Papers & Patterns',
   description:
-    'Explore iSET sample question patterns, exam format reference, and subject-wise breakdowns for all grade levels.',
-};
+    'Explore the iSET question bank with sample MCQ patterns, subject breakdowns, and exam format for all grades. Access official previous-year papers via IAME.',
+  path: '/question-bank',
+});
 
 const formatCards = [
   { tag: 'Format', num: 'MCQ', label: 'Multiple Choice Questions\n4 options, 1 correct answer' },
@@ -153,7 +155,7 @@ export default function QuestionBankPage() {
   return (
     <>
       <PageHero
-        title="Question Bank"
+        title="iSET Question Bank & Exam Pattern"
         description="Sample question patterns, exam format reference, and subject-wise breakdowns."
         breadcrumbLabel="Question Bank"
         imageSrc="/hero25.jpg"

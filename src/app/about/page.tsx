@@ -1,18 +1,20 @@
 import PageHero from '@/components/PageHero';
+import { buildPageMetadata } from '@/lib/metadata';
 
 const REGISTER_URL = 'https://iameonline.com/login/index';
 
-export const metadata = {
-  title: 'About iSET — International Skill Enhancement Training',
+export const metadata = buildPageMetadata({
+  title: 'About iSET by IAME — 20+ Years of Academic Excellence',
   description:
-    'Learn about iSET — International Skill Enhancement Training by IAME. Over 20 years of academic excellence for students LKG to Class XII.',
-};
+    'Learn about iSET and IAME\'s mission to empower students LKG to Class XII through structured competitive exams, gold coin awards, and over 20 years of excellence.',
+  path: '/about',
+});
 
 export default function AboutPage() {
   return (
     <>
       <PageHero
-        title="About iSET"
+        title="About iSET by IAME"
         description="Two decades of transforming how students learn, compete, and grow."
         breadcrumbLabel="About"
         imageSrc="/hero3.jpg"

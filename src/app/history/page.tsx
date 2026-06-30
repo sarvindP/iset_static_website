@@ -1,12 +1,14 @@
 import PageHero from '@/components/PageHero';
+import { buildPageMetadata } from '@/lib/metadata';
 
 const REGISTER_URL = 'https://iameonline.com/login/index';
 
-export const metadata = {
-  title: 'History — iSET 2026',
+export const metadata = buildPageMetadata({
+  title: 'The History of iSET by IAME — Two Decades of Impact',
   description:
-    'Explore iSET history — two decades of building academic excellence across India with key milestones and timeline.',
-};
+    'Explore the full history of iSET by IAME — founding milestones, multi-state growth, Grand Finale highlights, and over 20 years of trusted academic excellence.',
+  path: '/history',
+});
 
 const achievements = [
   {
@@ -129,7 +131,7 @@ export default function HistoryPage() {
   return (
     <>
       <PageHero
-        title="Our History"
+        title="History of iSET"
         description="Two decades of building academic excellence across India — one student at a time."
         breadcrumbLabel="History"
         imageSrc="/hero14.jpg"

@@ -1,10 +1,12 @@
 import PageHero from '@/components/PageHero';
+import { buildPageMetadata } from '@/lib/metadata';
 
-export const metadata = {
-  title: 'Curriculum — iSET 2026',
+export const metadata = buildPageMetadata({
+  title: 'iSET 2026 Curriculum & Syllabus by IAME — LKG to XII',
   description:
-    'Explore the iSET 2026 curriculum — age-appropriate syllabus for LKG to Class XII with exam pattern and subject breakdown.',
-};
+    'View the iSET 2026 curriculum by IAME — syllabus and exam pattern for LKG to Class XII, including Prelims, LTS/UTS, Grand Finale, and subjects by grade.',
+  path: '/curriculum',
+});
 
 const curriculumCards = [
   {
@@ -66,7 +68,7 @@ export default function CurriculumPage() {
   return (
     <>
       <PageHero
-        title="Curriculum"
+        title="iSET 2026 Curriculum & Syllabus"
         description="Age-appropriate syllabus designed to challenge, inspire, and develop every student."
         breadcrumbLabel="Curriculum"
         imageSrc="/hero7.jpg"
