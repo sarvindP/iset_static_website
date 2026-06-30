@@ -35,7 +35,7 @@ export default function GalleryPage() {
               <circle cx="8.5" cy="8.5" r="1.5" />
               <polyline points="21 15 16 10 5 21" />
             </svg>
-            <p className="text-text text-[0.9rem] max-w-none">
+            <p className="text-text text-[0.8125rem] md:text-[0.9rem] max-w-none leading-relaxed">
               <strong>Photo Gallery</strong> — Highlights from past iSET events and award ceremonies. The full event
               gallery is also available on the{' '}
               <a
@@ -49,11 +49,11 @@ export default function GalleryPage() {
             </p>
           </div>
 
-          <span className="inline-block text-[0.72rem] font-bold tracking-[0.18em] uppercase text-sky mb-3">
+          <span className="inline-block text-[0.8125rem] md:text-[0.72rem] font-bold tracking-[0.12em] md:tracking-[0.18em] uppercase text-sky mb-3">
             Event Highlights
           </span>
           <h2 className="mb-4 text-navy">iSET Event Moments</h2>
-          <p className="text-[1.05rem] text-muted mb-8 max-w-none">
+          <p className="text-[0.9375rem] md:text-[1.05rem] text-muted mb-8 max-w-none leading-relaxed">
             Celebrating student achievement and participation at iSET events across the programme.
           </p>
 

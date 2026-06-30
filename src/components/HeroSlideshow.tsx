@@ -4,9 +4,18 @@ import { useEffect, useRef, useState } from 'react';
 
 const HERO_IMAGES = [
   '/hero.jpg',
-  ...Array.from({ length: 9 }, (_, i) => `/hero${i + 2}.jpg`),
-  '/herohero11.jpg',
-  ...Array.from({ length: 19 }, (_, i) => `/hero${i + 12}.jpg`),
+  '/hero2.jpg',
+  '/hero3.jpg',
+  '/hero5.jpg',
+  '/hero7.jpg',
+  '/hero8.jpg',
+  '/hero12.jpg',
+  '/hero14.jpg',
+  '/hero15.jpg',
+  '/hero18.jpg',
+  '/hero20.jpg',
+  '/hero22.jpg',
+  '/hero25.jpg',
 ];
 
 const INTERVAL_MS = 5000;

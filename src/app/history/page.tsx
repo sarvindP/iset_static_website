@@ -140,7 +140,7 @@ export default function HistoryPage() {
 
       <section className="py-20 bg-cream">
         <div className="max-w-[1140px] mx-auto px-6">
-          <span className="inline-block text-[0.72rem] font-bold tracking-[0.18em] uppercase text-sky mb-3">
+          <span className="inline-block text-[0.8125rem] md:text-[0.72rem] font-bold tracking-[0.12em] md:tracking-[0.18em] uppercase text-sky mb-3">
             iSET by the Numbers
           </span>
           <h2 className="mb-4 text-navy">Key Milestones</h2>
@@ -152,8 +152,8 @@ export default function HistoryPage() {
                     {a.icon}
                   </svg>
                 </div>
-                <div className="font-display text-[2.4rem] font-bold text-navy">{a.num}</div>
-                <div className="text-muted text-[0.88rem] mt-1">{a.label}</div>
+                <div className="font-display text-[1.875rem] md:text-[2.4rem] font-bold text-navy leading-none">{a.num}</div>
+                <div className="text-muted text-[0.8125rem] md:text-[0.88rem] mt-1">{a.label}</div>
               </div>
             ))}
           </div>
@@ -162,7 +162,7 @@ export default function HistoryPage() {
 
       <section className="py-20">
         <div className="max-w-[1140px] mx-auto px-6">
-          <span className="inline-block text-[0.72rem] font-bold tracking-[0.18em] uppercase text-sky mb-3">
+          <span className="inline-block text-[0.8125rem] md:text-[0.72rem] font-bold tracking-[0.12em] md:tracking-[0.18em] uppercase text-sky mb-3">
             A Journey Through Time
           </span>
           <h2 className="mb-4 text-navy">iSET Timeline</h2>
@@ -190,7 +190,7 @@ export default function HistoryPage() {
                         {item.tag}
                       </span>
                       <h3 className="text-navy mb-2">{item.title}</h3>
-                      <p className="text-[0.9rem] max-w-none">{item.desc}</p>
+                      <p className="text-[0.8125rem] md:text-[0.9rem] leading-relaxed max-w-none">{item.desc}</p>
                       {item.showRegister && (
                         <a
                           href={REGISTER_URL}
@@ -225,7 +225,7 @@ export default function HistoryPage() {
                         {item.tag}
                       </span>
                       <h3 className="text-navy mb-2">{item.title}</h3>
-                      <p className="text-[0.9rem] max-w-none">{item.desc}</p>
+                      <p className="text-[0.8125rem] md:text-[0.9rem] leading-relaxed max-w-none">{item.desc}</p>
                       {item.showRegister && (
                         <a
                           href={REGISTER_URL}

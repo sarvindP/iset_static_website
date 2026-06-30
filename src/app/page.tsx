@@ -20,10 +20,10 @@ export default function HomePage() {
         <HeroSlideshow />
         <div className="absolute inset-0 bg-black/50" aria-hidden="true" />
         <div className="relative z-10 max-w-[1140px] mx-auto px-6 w-full text-center flex flex-col items-center">
-          <h1 className="text-white max-w-[18ch] mb-5 mx-auto text-[clamp(2.2rem,6vw,4.5rem)] font-bold">
+          <h1 className="text-white max-w-[20ch] mb-4 md:mb-5 mx-auto text-[clamp(1.75rem,7vw,4.5rem)] font-bold leading-tight">
             iSET 2026 by IAME
           </h1>
-          <p className="text-white text-[1.15rem] max-w-[48ch] mb-9 mx-auto">
+          <p className="text-white text-[0.9375rem] md:text-[1.15rem] leading-relaxed max-w-[48ch] mb-8 md:mb-9 mx-auto">
             Discover the Power Within — International Skill Enhancement Training with a 20-year legacy of unlocking student potential from LKG to Class XII across India.
           </p>
           <div className="flex gap-4 flex-wrap justify-center">
@@ -31,7 +31,7 @@ export default function HomePage() {
               href={REGISTER_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-sky text-white font-semibold text-[0.95rem] transition-all duration-250 hover:bg-[#2d6aa8] hover:-translate-y-px"
+              className="inline-flex items-center gap-2 px-6 py-3 md:px-7 md:py-3.5 rounded-full bg-sky text-white font-semibold text-[0.875rem] md:text-[0.95rem] transition-all duration-250 hover:bg-[#2d6aa8] hover:-translate-y-px"
             >
               <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
                 <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
@@ -41,7 +41,7 @@ export default function HomePage() {
             </a>
             <Link
               href="/about"
-              className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-white text-navy font-semibold text-[0.95rem] transition-all duration-250 hover:bg-white/90"
+              className="inline-flex items-center gap-2 px-6 py-3 md:px-7 md:py-3.5 rounded-full bg-white text-navy font-semibold text-[0.875rem] md:text-[0.95rem] transition-all duration-250 hover:bg-white/90"
             >
               Learn More
             </Link>
@@ -52,42 +52,42 @@ export default function HomePage() {
 
       <StatsMarquee />
 
-      <section className="py-20">
+      <section className="py-14 md:py-20">
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-            <div className="intro-visual relative bg-gradient-to-br from-navy to-sky rounded-2xl p-12 text-white overflow-hidden">
-              <blockquote className="font-display text-[1.6rem] leading-[1.35] text-white mb-6">
+            <div className="intro-visual relative bg-gradient-to-br from-navy to-sky rounded-2xl p-8 md:p-12 text-white overflow-hidden">
+              <blockquote className="font-display text-[1.2rem] md:text-[1.6rem] leading-[1.4] md:leading-[1.35] text-white mb-5 md:mb-6">
                 &ldquo;Every child possesses a unique set of <em className="text-white font-bold italic">talents and abilities</em> waiting to be discovered.&rdquo;
               </blockquote>
-              <p className="text-[0.85rem] text-white/60">
+              <p className="text-[0.8125rem] md:text-[0.85rem] text-white/60 leading-relaxed">
                 iSET is designed to unveil hidden gems, providing insights that pave the way for personalized growth and success.
               </p>
               <div className="mt-7 flex gap-4 flex-wrap">
                 <div>
-                  <strong className="text-[1.4rem] font-display font-bold text-white">3</strong>
+                  <strong className="text-[1.15rem] md:text-[1.4rem] font-display font-bold text-white">3</strong>
                   <br />
-                  <span className="text-[0.8rem] text-white/50">Exam Levels</span>
+                  <span className="text-[0.75rem] md:text-[0.8rem] text-white/50">Exam Levels</span>
                 </div>
                 {/* TODO: Gold coin award details (916 purity) pending confirmation from IAME — using generic label until confirmed. */}
                 <div>
-                  <strong className="text-[1.4rem] font-display font-bold text-white">Gold</strong>
+                  <strong className="text-[1.15rem] md:text-[1.4rem] font-display font-bold text-white">Gold</strong>
                   <br />
-                  <span className="text-[0.8rem] text-white/50">Coin Award</span>
+                  <span className="text-[0.75rem] md:text-[0.8rem] text-white/50">Coin Award</span>
                 </div>
                 <div>
-                  <strong className="text-[1.4rem] font-display font-bold text-white">50%+</strong>
+                  <strong className="text-[1.15rem] md:text-[1.4rem] font-display font-bold text-white">50%+</strong>
                   <br />
-                  <span className="text-[0.8rem] text-white/50">Score for LTS/UTS</span>
+                  <span className="text-[0.75rem] md:text-[0.8rem] text-white/50">Score for LTS/UTS</span>
                 </div>
               </div>
             </div>
             <div>
-              <span className="inline-block text-[0.72rem] font-bold tracking-[0.18em] uppercase text-sky mb-3">About iSET</span>
+              <span className="inline-block text-[0.8125rem] md:text-[0.72rem] font-bold tracking-[0.12em] md:tracking-[0.18em] uppercase text-sky mb-3">About iSET</span>
               <h2 className="mb-4 text-navy">A Platform Built for Every Learner</h2>
               <p className="mb-4 max-w-none">For over 20 years, iSET has been a beacon of academic excellence, giving students from LKG to Class XII a structured platform to develop analytical thinking, logical reasoning, and conceptual clarity.</p>
               {/* TODO: Student count ("10 Lakh+") is pending confirmed figure from IAME. */}
               <p className="mb-7 max-w-none">More than 10 lakh students have benefited, gaining the confidence to excel in academics and competitive examinations alike — including NTSE, Olympiads, and JEE.</p>
-              <Link href="/about" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-navy text-white font-semibold text-[0.95rem] transition-all duration-250 hover:bg-[#1a2f5a]">
+              <Link href="/about" className="inline-flex items-center gap-2 px-6 py-3 md:px-7 md:py-3.5 rounded-full bg-navy text-white font-semibold text-[0.875rem] md:text-[0.95rem] transition-all duration-250 hover:bg-[#1a2f5a]">
                 Read the Story →
               </Link>
             </div>
@@ -95,9 +95,9 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-20 bg-[#F5F5F5]">
+      <section className="py-14 md:py-20 bg-[#F5F5F5]">
         <div className="max-w-[1140px] mx-auto px-6">
-          <span className="inline-block text-[0.72rem] font-bold tracking-[0.18em] uppercase text-sky mb-3">Why iSET?</span>
+          <span className="inline-block text-[0.8125rem] md:text-[0.72rem] font-bold tracking-[0.12em] md:tracking-[0.18em] uppercase text-sky mb-3">Why iSET?</span>
           <h2 className="mb-4 text-navy">Key Benefits</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
@@ -121,11 +121,11 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-20">
+      <section className="py-14 md:py-20">
         <div className="max-w-[1140px] mx-auto px-6">
-          <span className="inline-block text-[0.72rem] font-bold tracking-[0.18em] uppercase text-sky mb-3">Curriculum Overview</span>
+          <span className="inline-block text-[0.8125rem] md:text-[0.72rem] font-bold tracking-[0.12em] md:tracking-[0.18em] uppercase text-sky mb-3">Curriculum Overview</span>
           <h2 className="mb-4 text-navy">Syllabus at a Glance</h2>
-          <p className="mb-12 text-[1.05rem] text-muted">
+          <p className="mb-10 md:mb-12 text-[0.9375rem] md:text-[1.05rem] text-muted">
             Three tailored pathways ensure age-appropriate challenge for every student.{' '}
             <Link href="/curriculum" className="text-sky font-semibold">View full curriculum →</Link>
           </p>
@@ -139,7 +139,7 @@ export default function HomePage() {
                   <h4 className="text-navy mb-2.5">{band.title}</h4>
                   <ul className="list-none">
                     {band.items.map((item) => (
-                      <li key={item} className="text-[0.88rem] text-muted py-[3px]">{item}</li>
+                      <li key={item} className="text-[0.8125rem] md:text-[0.88rem] text-muted py-[3px]">{item}</li>
                     ))}
                   </ul>
                 </div>
@@ -158,7 +158,7 @@ export default function HomePage() {
           href={REGISTER_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2.5 bg-sky text-white px-10 py-[18px] rounded-full text-[1.05rem] font-bold transition-all duration-250 hover:bg-[#2d6aa8] hover:-translate-y-0.5"
+          className="inline-flex items-center gap-2.5 bg-sky text-white px-8 py-4 md:px-10 md:py-[18px] rounded-full text-[0.9375rem] md:text-[1.05rem] font-bold transition-all duration-250 hover:bg-[#2d6aa8] hover:-translate-y-0.5"
         >
           <svg width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
             <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />

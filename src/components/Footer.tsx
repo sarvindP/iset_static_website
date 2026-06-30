@@ -38,9 +38,10 @@ export default function Footer() {
               alt="IAME"
               width={120}
               height={52}
-              className="h-[52px] w-auto brightness-0 invert opacity-90"
+              className="brightness-0 invert opacity-90 shrink-0"
+              style={{ height: '52px', width: 'auto' }}
             />
-            <p className="text-[0.88rem] mt-3 max-w-[28ch] text-white/60">
+            <p className="text-[0.8125rem] md:text-[0.88rem] mt-3 max-w-[28ch] text-white/60 leading-relaxed">
               Ideal Association for Minority Education — leading the community to be always ahead.
             </p>
             <div className="flex items-center gap-3 mt-4">
@@ -62,7 +63,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <p className="font-body text-[0.72rem] font-bold tracking-[0.15em] uppercase text-sky mb-4">
+            <p className="font-body text-[0.8125rem] md:text-[0.72rem] font-bold tracking-[0.12em] md:tracking-[0.15em] uppercase text-sky mb-4">
               Quick Links
             </p>
             <ul className="list-none flex flex-col gap-2.5">
@@ -75,7 +76,7 @@ export default function Footer() {
                 { href: '/question-bank', label: 'Question Bank' },
               ].map(({ href, label }) => (
                 <li key={href}>
-                  <Link href={href} className="footer-link text-[0.88rem] text-white/65 transition-colors duration-250 hover:text-white">
+                  <Link href={href} className="footer-link text-[0.8125rem] md:text-[0.88rem] text-white/65 transition-colors duration-250 hover:text-white">
                     {label}
                   </Link>
                 </li>
@@ -84,7 +85,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <p className="font-body text-[0.72rem] font-bold tracking-[0.15em] uppercase text-sky mb-4">
+            <p className="font-body text-[0.8125rem] md:text-[0.72rem] font-bold tracking-[0.12em] md:tracking-[0.15em] uppercase text-sky mb-4">
               iSET Exam
             </p>
             <ul className="list-none flex flex-col gap-2.5">
@@ -100,7 +101,7 @@ export default function Footer() {
                     href={href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="footer-link text-[0.88rem] text-white/65 transition-colors duration-250 hover:text-white"
+                    className="footer-link text-[0.8125rem] md:text-[0.88rem] text-white/65 transition-colors duration-250 hover:text-white"
                   >
                     {label}
                   </a>
@@ -110,23 +111,23 @@ export default function Footer() {
           </div>
 
           <div>
-            <p className="font-body text-[0.72rem] font-bold tracking-[0.15em] uppercase text-sky mb-4">
+            <p className="font-body text-[0.8125rem] md:text-[0.72rem] font-bold tracking-[0.12em] md:tracking-[0.15em] uppercase text-sky mb-4">
               Contact
             </p>
-            <div className="flex gap-2.5 items-start text-[0.88rem] text-white/65 mb-2.5">
+            <div className="flex gap-2.5 items-start text-[0.8125rem] md:text-[0.88rem] text-white/65 mb-2.5">
               <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" className="shrink-0 mt-0.5">
                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
                 <circle cx="12" cy="10" r="3" />
               </svg>
               <span>4th Floor, Markaz Complex, Mavoor Road, Calicut, Kerala, India-673004</span>
             </div>
-            <div className="flex gap-2.5 items-start text-[0.88rem] text-white/65 mb-2.5">
+            <div className="flex gap-2.5 items-start text-[0.8125rem] md:text-[0.88rem] text-white/65 mb-2.5">
               <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" className="shrink-0 mt-0.5">
                 <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l.81-.81a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
               </svg>
               <span>+91 8086 511 165</span>
             </div>
-            <div className="flex gap-2.5 items-start text-[0.88rem] text-white/65 mb-2.5">
+            <div className="flex gap-2.5 items-start text-[0.8125rem] md:text-[0.88rem] text-white/65 mb-2.5">
               <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" className="shrink-0 mt-0.5">
                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
                 <polyline points="22,6 12,13 2,6" />

@@ -10,10 +10,10 @@ function StatItem({ num, label }: { num: string; label: string }) {
   return (
     <div className="flex items-center shrink-0 px-8 md:px-12">
       <div className="flex flex-col items-center text-center">
-        <span className="font-display text-[1.75rem] md:text-[2.2rem] font-bold text-navy whitespace-nowrap leading-tight">
+        <span className="font-display text-[1.5rem] sm:text-[1.75rem] md:text-[2.2rem] font-bold text-navy whitespace-nowrap leading-tight">
           {num}
         </span>
-        <span className="text-[0.82rem] md:text-[0.9rem] text-muted whitespace-nowrap mt-1">
+        <span className="text-[0.8125rem] md:text-[0.9rem] text-muted whitespace-nowrap mt-1">
           {label}
         </span>
       </div>

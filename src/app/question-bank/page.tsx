@@ -163,7 +163,7 @@ export default function QuestionBankPage() {
 
       <section className="py-20">
         <div className="max-w-[1140px] mx-auto px-6">
-          <span className="inline-block text-[0.72rem] font-bold tracking-[0.18em] uppercase text-sky mb-3">
+          <span className="inline-block text-[0.8125rem] md:text-[0.72rem] font-bold tracking-[0.12em] md:tracking-[0.18em] uppercase text-sky mb-3">
             Exam Format
           </span>
           <h2 className="mb-4 text-navy">Pattern of Questions</h2>
@@ -178,29 +178,29 @@ export default function QuestionBankPage() {
                   <span className="inline-block mb-3 bg-navy/[0.07] text-navy rounded-full px-3 py-0.5 text-[0.75rem] font-semibold">
                     {card.tag}
                   </span>
-                  <div className="font-display text-[2rem] font-bold text-navy">{card.num}</div>
-                  <div className="text-[0.82rem] text-muted mt-1 whitespace-pre-line">{card.label}</div>
+                  <div className="font-display text-[1.625rem] md:text-[2rem] font-bold text-navy">{card.num}</div>
+                  <div className="text-[0.75rem] md:text-[0.82rem] text-muted mt-1 whitespace-pre-line">{card.label}</div>
                 </div>
             ))}
           </div>
 
-          <p className="mb-8 text-[0.9rem] text-muted max-w-none">
+          <p className="mb-8 text-[0.8125rem] md:text-[0.9rem] text-muted max-w-none leading-relaxed">
             Sample questions shown are for illustration purposes. For actual previous-year papers, see the Previous
             Questions link below.
           </p>
 
           {sampleSections.map((section) => (
-            <div key={section.badge} className="bg-cream rounded-2xl p-10 mb-8">
+            <div key={section.badge} className="bg-cream rounded-2xl p-6 md:p-10 mb-8">
                 <span className="inline-block bg-navy text-white rounded-full px-3.5 py-0.5 text-[0.75rem] font-semibold mb-3.5">
                   {section.badge}
                 </span>
                 <h3 className="text-navy mb-1.5">Sample Question Types</h3>
-                <p className="mb-5 text-[0.9rem] max-w-none">{section.desc}</p>
+                <p className="mb-5 text-[0.8125rem] md:text-[0.9rem] max-w-none leading-relaxed">{section.desc}</p>
                 <ul className="list-none flex flex-col gap-3">
                   {section.questions.map((q, i) => (
                     <li
                       key={i}
-                      className="bg-white rounded-[10px] px-5 py-4 border-l-4 border-sky text-[0.9rem] text-text flex items-start gap-3.5"
+                      className="bg-white rounded-[10px] px-4 py-3.5 md:px-5 md:py-4 border-l-4 border-sky text-[0.8125rem] md:text-[0.9rem] text-text flex items-start gap-3 md:gap-3.5"
                     >
                       <div className="shrink-0 w-7 h-7 rounded-full bg-navy text-white flex items-center justify-center text-[0.78rem] font-bold">
                         {i + 1}
@@ -217,7 +217,7 @@ export default function QuestionBankPage() {
               </div>
           ))}
 
-          <span className="inline-block text-[0.72rem] font-bold tracking-[0.18em] uppercase text-sky mb-3">
+          <span className="inline-block text-[0.8125rem] md:text-[0.72rem] font-bold tracking-[0.12em] md:tracking-[0.18em] uppercase text-sky mb-3">
             Subject Distribution
           </span>
           <h2 className="mb-4 text-navy">Subject-wise Question Breakdown</h2>

@@ -23,10 +23,10 @@ export default function AboutPage() {
       <section className="py-20">
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-14 items-center">
-            <div className="about-img-box relative bg-gradient-to-br from-sky to-navy rounded-2xl px-9 py-12 overflow-hidden">
+            <div className="about-img-box relative bg-gradient-to-br from-sky to-navy rounded-2xl px-6 py-9 md:px-9 md:py-12 overflow-hidden">
               {/* TODO: Student count ("10 Lakh+") is pending confirmed figure from IAME. */}
-              <div className="font-display text-[4rem] font-black text-white">10 Lakh+</div>
-              <div className="text-white/60 text-[0.9rem] mb-8">students benefited since inception</div>
+              <div className="font-display text-[2.75rem] md:text-[4rem] font-black text-white leading-none">10 Lakh+</div>
+              <div className="text-white/60 text-[0.8125rem] md:text-[0.9rem] mb-6 md:mb-8">students benefited since inception</div>
               <ul className="list-none">
                 {[
                   'Over 20 years of academic excellence',
@@ -38,7 +38,7 @@ export default function AboutPage() {
                 ].map((item) => (
                   <li
                     key={item}
-                    className="text-white/75 text-[0.9rem] py-2 border-b border-white/[0.08] flex items-center gap-2.5"
+                    className="text-white/75 text-[0.8125rem] md:text-[0.9rem] py-2 border-b border-white/[0.08] flex items-center gap-2.5"
                   >
                     {item}
                   </li>
@@ -46,7 +46,7 @@ export default function AboutPage() {
               </ul>
             </div>
             <div>
-              <span className="inline-block text-[0.72rem] font-bold tracking-[0.18em] uppercase text-sky mb-3">
+              <span className="inline-block text-[0.8125rem] md:text-[0.72rem] font-bold tracking-[0.12em] md:tracking-[0.18em] uppercase text-sky mb-3">
                 Background
               </span>
               <h2 className="mb-4 text-navy">What is iSET?</h2>
@@ -76,7 +76,7 @@ export default function AboutPage() {
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-14 items-start">
             <div>
-              <span className="inline-block text-[0.72rem] font-bold tracking-[0.18em] uppercase text-sky mb-3">
+              <span className="inline-block text-[0.8125rem] md:text-[0.72rem] font-bold tracking-[0.12em] md:tracking-[0.18em] uppercase text-sky mb-3">
                 The Organisation Behind iSET
               </span>
               <h2 className="mb-4 text-navy">About IAME</h2>
@@ -138,7 +138,7 @@ export default function AboutPage() {
 
       <section className="py-20">
         <div className="max-w-[1140px] mx-auto px-6">
-          <span className="inline-block text-[0.72rem] font-bold tracking-[0.18em] uppercase text-sky mb-3">
+          <span className="inline-block text-[0.8125rem] md:text-[0.72rem] font-bold tracking-[0.12em] md:tracking-[0.18em] uppercase text-sky mb-3">
             Why iSET Stands Apart
           </span>
           <h2 className="mb-4 text-navy">Differentiators & Benefits</h2>
@@ -208,7 +208,7 @@ export default function AboutPage() {
                   </div>
                   <div>
                     <h4 className="text-navy mb-1 text-base">{b.title}</h4>
-                    <p className="text-[0.88rem] max-w-none">{b.desc}</p>
+                    <p className="text-[0.8125rem] md:text-[0.88rem] max-w-none">{b.desc}</p>
                   </div>
                 </div>
             ))}
@@ -232,8 +232,8 @@ export default function AboutPage() {
                   <path d="M16 3.13a4 4 0 0 1 0 7.75" />
                 </svg>
                 <div>
-                  <div className="font-display text-[1.6rem] text-white">LKG to Class XII</div>
-                  <div className="text-[0.8rem] text-white/50">All students are eligible</div>
+                  <div className="font-display text-[1.25rem] md:text-[1.6rem] text-white">LKG to Class XII</div>
+                  <div className="text-[0.75rem] md:text-[0.8rem] text-white/50">All students are eligible</div>
                 </div>
               </div>
               <p className="mt-5 text-white/55 max-w-none">

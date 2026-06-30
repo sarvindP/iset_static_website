@@ -83,8 +83,8 @@ export default function CurriculumPage() {
                     <div className="bg-white/15 text-white rounded-lg px-3.5 py-1.5 text-[0.78rem] font-bold tracking-[0.08em] uppercase inline-block">
                       {card.badge}
                     </div>
-                    <div className="font-display text-2xl text-white mt-2">{card.title}</div>
-                    <div className="text-[0.85rem] text-white/60 mt-1">{card.sub}</div>
+                    <div className="font-display text-xl md:text-2xl text-white mt-2">{card.title}</div>
+                    <div className="text-[0.8125rem] md:text-[0.85rem] text-white/60 mt-1">{card.sub}</div>
                   </div>
                 </div>
                 <div className="p-8 grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-6">
@@ -107,7 +107,7 @@ export default function CurriculumPage() {
           ))}
 
           <div className="bg-cream rounded-2xl p-10 mt-12">
-              <span className="inline-block text-[0.72rem] font-bold tracking-[0.18em] uppercase text-sky mb-3">
+              <span className="inline-block text-[0.8125rem] md:text-[0.72rem] font-bold tracking-[0.12em] md:tracking-[0.18em] uppercase text-sky mb-3">
                 Exam Structure
               </span>
               <h2 className="mb-4 text-navy">Pattern of iSET 2026</h2>
@@ -117,9 +117,9 @@ export default function CurriculumPage() {
               <div className="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-6 mt-7">
                 {examPattern.map((ep) => (
                   <div key={ep.title} className="bg-white rounded-[10px] p-6 text-center border border-border">
-                    <div className={`font-display text-[2.2rem] font-bold ${ep.numColor}`}>{ep.num}</div>
-                    <div className="font-semibold text-navy my-1">{ep.title}</div>
-                    <div className="text-[0.82rem] text-muted mt-1 whitespace-pre-line">{ep.label}</div>
+                    <div className={`font-display text-[1.625rem] md:text-[2.2rem] font-bold ${ep.numColor}`}>{ep.num}</div>
+                    <div className="font-semibold text-navy text-[0.9375rem] md:text-base my-1">{ep.title}</div>
+                    <div className="text-[0.75rem] md:text-[0.82rem] text-muted mt-1 whitespace-pre-line">{ep.label}</div>
                   </div>
                 ))}
               </div>

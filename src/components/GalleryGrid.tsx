@@ -57,7 +57,7 @@ export default function GalleryGrid() {
 
       {selected && (
         <div
-          className="fixed inset-0 z-[999] bg-black/90 flex items-center justify-center p-4 md:p-8"
+          className="fixed inset-0 z-[1200] bg-black/90"
           onClick={close}
           role="dialog"
           aria-modal="true"
@@ -71,17 +71,16 @@ export default function GalleryGrid() {
           >
             ×
           </button>
-          <div
-            className="relative w-full max-w-6xl h-[85vh]"
-            onClick={(event) => event.stopPropagation()}
-          >
+          <div className="flex items-center justify-center w-full h-full p-4 pt-20 md:p-8 md:pt-8 pointer-events-none">
             <Image
               src={selected.src}
               alt={selected.alt}
-              fill
-              className="object-contain"
+              width={1600}
+              height={1200}
+              className="pointer-events-auto max-w-full max-h-[85vh] w-auto h-auto object-contain"
               sizes="100vw"
               priority
+              onClick={(event) => event.stopPropagation()}
             />
           </div>
         </div>
