@@ -4,7 +4,7 @@ import GalleryGrid from '@/components/GalleryGrid';
 export const metadata = {
   title: 'Gallery — iSET 2026',
   description:
-    'View memories from iSET Grand Finales, award ceremonies, and student celebrations. Explore highlights from past iSET events.',
+    'View memories from iSET events, award ceremonies, and student celebrations. Explore highlights from past iSET programmes.',
 };
 
 export default function GalleryPage() {
@@ -12,7 +12,7 @@ export default function GalleryPage() {
     <>
       <PageHero
         title="Gallery"
-        description="Memories from iSET Grand Finales, award ceremonies, and student celebrations."
+        description="Memories from iSET events, award ceremonies, and student celebrations."
         breadcrumbLabel="Gallery"
         imageSrc="/hero20.jpg"
       />
@@ -34,8 +34,8 @@ export default function GalleryPage() {
               <polyline points="21 15 16 10 5 21" />
             </svg>
             <p className="text-text text-[0.9rem] max-w-none">
-              <strong>Photo Gallery</strong> — Highlights from past iSET Grand Finales and award ceremonies. The full
-              event gallery is also available on the{' '}
+              <strong>Photo Gallery</strong> — Highlights from past iSET events and award ceremonies. The full event
+              gallery is also available on the{' '}
               <a
                 href="https://iameonline.com/album"
                 target="_blank"
@@ -48,11 +48,11 @@ export default function GalleryPage() {
           </div>
 
           <span className="inline-block text-[0.72rem] font-bold tracking-[0.18em] uppercase text-sky mb-3">
-            Grand Finale 2024
+            Event Highlights
           </span>
-          <h2 className="mb-4 text-navy">iSET Grand Finale Moments</h2>
+          <h2 className="mb-4 text-navy">iSET Event Moments</h2>
           <p className="text-[1.05rem] text-muted mb-8 max-w-none">
-            Celebrating outstanding students at the Grand Finale held at Majestic Auditorium, Kozhikode.
+            Celebrating student achievement and participation at iSET events across the programme.
           </p>
 
           <GalleryGrid />

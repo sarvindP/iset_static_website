@@ -1,3 +1,4 @@
+// TODO: Replace placeholder images with real iSET event photos once provided by client.
 export type GalleryImage = {
   src: string;
   alt: string;
@@ -8,33 +9,33 @@ export type GalleryImage = {
 export const GALLERY_IMAGES: GalleryImage[] = [
   {
     src: '/hero2.jpg',
-    alt: 'Grand Finale Stage — Majestic Auditorium',
+    alt: 'Event moment',
     wide: true,
   },
   {
     src: '/hero3.jpg',
-    alt: 'Gold Coin Award Ceremony',
+    alt: 'Award ceremony moment',
     tall: true,
   },
   {
     src: '/hero5.jpg',
-    alt: 'Student Toppers',
+    alt: 'Student celebration',
   },
   {
     src: '/hero8.jpg',
-    alt: 'Trophy Presentation',
+    alt: 'Recognition moment',
   },
   {
     src: '/hero12.jpg',
-    alt: 'Opening Ceremony',
+    alt: 'Programme highlight',
   },
   {
     src: '/hero15.jpg',
-    alt: 'School Delegations',
+    alt: 'School participation',
   },
   {
     src: '/hero18.jpg',
-    alt: 'Group Photograph — Grand Finale 2024',
+    alt: 'Group event moment',
     wide: true,
   },
   {

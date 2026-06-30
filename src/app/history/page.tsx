@@ -22,6 +22,7 @@ const achievements = [
     ),
   },
   {
+    // TODO: Student count ("10 Lakh+") is pending confirmed figure from IAME.
     num: '10 Lakh+',
     label: 'Students Benefited',
     icon: (
@@ -54,7 +55,8 @@ const achievements = [
     ),
   },
   {
-    num: '916',
+    // TODO: Gold coin award details (916 purity) pending confirmation from IAME — using generic label until confirmed.
+    num: 'Gold',
     label: 'Gold Coin — Top Prize at Grand Finale',
     icon: (
       <>
@@ -74,6 +76,7 @@ const achievements = [
 
 const timelineItems = [
   {
+    // TODO: Founding year ("~2004") is pending confirmed year from IAME.
     year: '~2004',
     side: 'left',
     tag: 'Foundation',
@@ -98,6 +101,7 @@ const timelineItems = [
     year: '2024',
     side: 'right',
     tag: 'Grand Finale',
+    // TODO: Grand Finale 2024 venue and date pending confirmation from IAME.
     title: 'Grand Finale at Majestic Auditorium',
     desc: 'iSET 2024 Grand Finale held at Majestic Auditorium, Kozhikode on 5th February 2025 — bringing together the brightest students from across the country for the most prestigious recognition event in the IAME academic calendar.',
   },
@@ -105,6 +109,7 @@ const timelineItems = [
     year: 'Legacy',
     side: 'left',
     tag: 'Recognition',
+    // TODO: Student count ("10 Lakh+") is pending confirmed figure from IAME.
     title: '10 Lakh+ Students Milestone',
     desc: 'iSET surpasses 10 lakh (one million) cumulative student participants — a landmark that cements its status as one of the most impactful school exam programmes in India for minority community education.',
   },
@@ -113,6 +118,7 @@ const timelineItems = [
     side: 'right',
     tag: 'Now Open',
     title: 'iSET 2026 — Register Today',
+    // TODO: Exam cycle dates below are unconfirmed — pending client sign-off before publishing.
     desc: 'The latest edition of iSET continues the 20-year legacy. Prelims on November 15, 2025 → LTS & UTS on January 15, 2026 → Grand Finale on January 24, 2026 at Calicut. Open to all students LKG–XII in IAME member schools.',
     highlight: true,
     showRegister: true,

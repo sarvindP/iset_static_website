@@ -22,6 +22,7 @@ export default function AboutPage() {
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-14 items-center">
             <div className="about-img-box relative bg-gradient-to-br from-sky to-navy rounded-2xl px-9 py-12 overflow-hidden">
+              {/* TODO: Student count ("10 Lakh+") is pending confirmed figure from IAME. */}
               <div className="font-display text-[4rem] font-black text-white">10 Lakh+</div>
               <div className="text-white/60 text-[0.9rem] mb-8">students benefited since inception</div>
               <ul className="list-none">
@@ -53,6 +54,7 @@ export default function AboutPage() {
                 excellence, providing students with a structured platform to develop analytical thinking, logical
                 reasoning, and conceptual clarity.
               </p>
+              {/* TODO: Student count ("10 Lakh+") is pending confirmed figure from IAME. */}
               <p className="mb-4 max-w-none">
                 More than 10 lakh students have benefited from this programme, gaining the confidence to excel in
                 academics and competitive examinations alike. iSET is not just a test — it is an opportunity to unlock
@@ -164,7 +166,8 @@ export default function AboutPage() {
               },
               {
                 title: 'Prestigious Gold Coin Awards',
-                desc: 'Grand Finale winners are awarded 916 Gold Coins, trophies, and certificates — tangible recognition of achievement.',
+                // TODO: Gold coin award details (916 purity) pending confirmation from IAME — using generic wording until confirmed.
+                desc: 'Grand Finale winners are awarded gold coin awards, trophies, and certificates — tangible recognition of achievement.',
                 icon: (
                   <>
                     <circle cx="12" cy="8" r="7" />

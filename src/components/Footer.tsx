@@ -118,7 +118,7 @@ export default function Footer() {
                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
                 <circle cx="12" cy="10" r="3" />
               </svg>
-              <span>4th Floor, Markaz Complex, Mavoor Road, Kozhikode, Kerala 673004</span>
+              <span>4th Floor, Markaz Complex, Mavoor Road, Calicut, Kerala, India-673004</span>
             </div>
             <div className="flex gap-2.5 items-start text-[0.88rem] text-white/65 mb-2.5">
               <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" className="shrink-0 mt-0.5">
@@ -135,7 +135,7 @@ export default function Footer() {
             </div>
             <div className="mt-2 rounded overflow-hidden">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3912.4095948!2d75.7804!3d11.2588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba65938563d4747%3A0x6a8b1b8b8b8b8b8b!2sMarkaz+Complex%2C+Mavoor+Road%2C+Kozhikode%2C+Kerala!5e0!3m2!1sen!2sin!4v1620000000000"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3913.0232835344486!2d75.78530727486176!3d11.259697350094159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba65948f227aa45%3A0xe070500382808ff4!2sIdeal%20Association%20For%20Minority%20Education!5e0!3m2!1sen!2sin!4v1686496858568!5m2!1sen!2sin"
                 allowFullScreen
                 loading="lazy"
                 title="IAME Location"

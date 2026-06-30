@@ -1,3 +1,4 @@
+// TODO: Student count ("10 Lakh+") is pending confirmed figure from IAME.
 const STATS = [
   { num: '10 Lakh+', label: 'Students Benefited' },
   { num: '20 Years', label: 'Of Excellence' },

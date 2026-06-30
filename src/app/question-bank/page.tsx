@@ -140,12 +140,13 @@ const sampleSections = [
   },
 ];
 
+// TODO: Subject weightings below are illustrative/authored figures — not sourced from official IAME curriculum data. Pending client confirmation.
 const subjectBreakdown = [
-  { name: 'English Language', width: '25%', detail: '~25% • Grammar, vocabulary, comprehension' },
-  { name: 'Mathematics', width: '25%', detail: '~25% • Mental math, problem solving' },
-  { name: 'Science', width: '20%', detail: '~20% • Environmental, basic science' },
-  { name: 'Logical Reasoning', width: '15%', detail: '~15% • Patterns, analogy, sequences' },
-  { name: 'General Awareness', width: '15%', detail: '~15% • Current affairs (Avenir), life skills' },
+  { name: 'English Language', width: '80%', detail: 'Grammar, vocabulary, comprehension' },
+  { name: 'Mathematics', width: '80%', detail: 'Mental math, problem solving' },
+  { name: 'Science', width: '80%', detail: 'Environmental, basic science' },
+  { name: 'Logical Reasoning', width: '80%', detail: 'Patterns, analogy, sequences' },
+  { name: 'General Awareness', width: '80%', detail: 'Current affairs (Avenir), life skills' },
 ];
 
 export default function QuestionBankPage() {
@@ -181,6 +182,11 @@ export default function QuestionBankPage() {
             ))}
           </div>
 
+          <p className="mb-8 text-[0.9rem] text-muted max-w-none">
+            Sample questions shown are for illustration purposes. For actual previous-year papers, see the Previous
+            Questions link below.
+          </p>
+
           {sampleSections.map((section) => (
             <div key={section.badge} className="bg-cream rounded-2xl p-10 mb-8">
                 <span className="inline-block bg-navy text-white rounded-full px-3.5 py-0.5 text-[0.75rem] font-semibold mb-3.5">
@@ -214,7 +220,8 @@ export default function QuestionBankPage() {
           </span>
           <h2 className="mb-4 text-navy">Subject-wise Question Breakdown</h2>
           <p className="mb-8 max-w-none">
-            Approximate distribution of question types per paper (Grade I–VII pattern shown).
+            Papers draw on all major subject areas with roughly equal weight across subjects (Grade I–VII pattern
+            shown).
           </p>
           <div className="grid grid-cols-[repeat(auto-fit,minmax(180px,1fr))] gap-5">
             {subjectBreakdown.map((sb) => (
