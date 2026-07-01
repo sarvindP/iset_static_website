@@ -1,13 +1,12 @@
 import Link from 'next/link';
+import Hero from '@/components/Hero';
 import StatsMarquee from '@/components/StatsMarquee';
-import HeroSlideshow from '@/components/HeroSlideshow';
-import HeroCurveDivider from '@/components/HeroCurveDivider';
 import { buildPageMetadata } from '@/lib/metadata';
 
 export const metadata = buildPageMetadata({
-  title: 'iSET 2026 by IAME — Register for Skill Enhancement',
+  title: 'iSET by IAME — Register for Skill Enhancement',
   description:
-    'Register for iSET 2026, IAME\'s flagship exam for students LKG to Class XII. Build reasoning, analytical skills, and exam confidence through a three-level programme.',
+    'Register for iSET, IAME\'s flagship exam for students LKG to Class XII. Build reasoning, analytical skills, and exam confidence through a three-level programme.',
   path: '/',
 });
 
@@ -16,43 +15,11 @@ const REGISTER_URL = 'https://iameonline.com/login/index';
 export default function HomePage() {
   return (
     <>
-      <section className="relative min-h-[90vh] flex items-center overflow-hidden bg-navy max-md:min-h-0 max-md:py-20 max-md:pb-[60px]">
-        <HeroSlideshow />
-        <div className="absolute inset-0 bg-black/50" aria-hidden="true" />
-        <div className="relative z-10 max-w-[1140px] mx-auto px-6 w-full text-center flex flex-col items-center">
-          <h1 className="text-white max-w-[20ch] mb-4 md:mb-5 mx-auto text-[clamp(1.75rem,7vw,4.5rem)] font-bold leading-tight">
-            iSET 2026 by IAME
-          </h1>
-          <p className="text-white text-[0.9375rem] md:text-[1.15rem] leading-relaxed max-w-[48ch] mb-8 md:mb-9 mx-auto">
-            Discover the Power Within — International Skill Enhancement Training with a 20-year legacy of unlocking student potential from LKG to Class XII across India.
-          </p>
-          <div className="flex gap-4 flex-wrap justify-center">
-            <a
-              href={REGISTER_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 md:px-7 md:py-3.5 rounded-full bg-sky text-white font-semibold text-[0.875rem] md:text-[0.95rem] transition-all duration-250 hover:bg-[#2d6aa8] hover:-translate-y-px"
-            >
-              <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
-                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-                <polyline points="14 2 14 8 20 8" />
-              </svg>
-              Register for iSET 2026
-            </a>
-            <Link
-              href="/about"
-              className="inline-flex items-center gap-2 px-6 py-3 md:px-7 md:py-3.5 rounded-full bg-white text-navy font-semibold text-[0.875rem] md:text-[0.95rem] transition-all duration-250 hover:bg-white/90"
-            >
-              Learn More
-            </Link>
-          </div>
-        </div>
-        <HeroCurveDivider />
-      </section>
+      <Hero />
 
       <StatsMarquee />
 
-      <section className="py-14 md:py-20">
+      <section id="about" className="py-14 md:py-20">
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <div className="intro-visual relative bg-gradient-to-br from-navy to-sky rounded-2xl p-8 md:p-12 text-white overflow-hidden">
@@ -125,10 +92,14 @@ export default function HomePage() {
         <div className="max-w-[1140px] mx-auto px-6">
           <span className="inline-block text-[0.8125rem] md:text-[0.72rem] font-bold tracking-[0.12em] md:tracking-[0.18em] uppercase text-sky mb-3">Curriculum Overview</span>
           <h2 className="mb-4 text-navy">Syllabus at a Glance</h2>
-          <p className="mb-10 md:mb-12 text-[0.9375rem] md:text-[1.05rem] text-muted">
-            Three tailored pathways ensure age-appropriate challenge for every student.{' '}
-            <Link href="/curriculum" className="text-sky font-semibold">View full curriculum →</Link>
-          </p>
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-10 md:mb-12">
+            <p className="mb-0 text-[0.9375rem] md:text-[1.05rem] text-muted">
+              Three tailored pathways ensure age-appropriate challenge for every student.
+            </p>
+            <Link href="/curriculum" className="text-sky font-semibold shrink-0 sm:ml-6">
+              View full curriculum →
+            </Link>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
             {[
               { title: 'LKG & UKG', items: ['Colours & Shapes', 'Basic English & Numbers', 'Listening & Picture Identification', 'General Awareness', 'Patterns and Analogy'] },
@@ -149,7 +120,7 @@ export default function HomePage() {
       </section>
 
       <section className="bg-[#F5F5F5] text-center py-20 px-6">
-        <h2 className="text-navy mb-4">Ready to Register for iSET 2026?</h2>
+        <h2 className="text-navy mb-4">Ready to Register for iSET?</h2>
         {/* TODO: Student count ("10 Lakh+") is pending confirmed figure from IAME. */}
         <p className="text-muted max-w-[52ch] mx-auto mb-9">
           Join over 10 lakh students who have already discovered their potential through IAME&apos;s flagship exam programme.
@@ -164,7 +135,7 @@ export default function HomePage() {
             <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
             <polyline points="14 2 14 8 20 8" />
           </svg>
-          Register iSET Exam 2026
+          Register iSET Exam
         </a>
         <p className="mt-5 text-[0.85rem] text-muted max-w-none mx-auto">
           Registration is handled through the official IAME portal at iameonline.com

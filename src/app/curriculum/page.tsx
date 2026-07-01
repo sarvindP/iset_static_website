@@ -2,9 +2,9 @@ import PageHero from '@/components/PageHero';
 import { buildPageMetadata } from '@/lib/metadata';
 
 export const metadata = buildPageMetadata({
-  title: 'iSET 2026 Curriculum & Syllabus by IAME — LKG to XII',
+  title: 'iSET Curriculum & Syllabus by IAME — LKG to XII',
   description:
-    'View the iSET 2026 curriculum by IAME — syllabus and exam pattern for LKG to Class XII, including Prelims, LTS/UTS, Grand Finale, and subjects by grade.',
+    'View the iSET curriculum by IAME — syllabus and exam pattern for LKG to Class XII, including Prelims, LTS/UTS, Grand Finale, and subjects by grade.',
   path: '/curriculum',
 });
 
@@ -68,10 +68,9 @@ export default function CurriculumPage() {
   return (
     <>
       <PageHero
-        title="iSET 2026 Curriculum & Syllabus"
+        title="iSET Curriculum & Syllabus"
         description="Age-appropriate syllabus designed to challenge, inspire, and develop every student."
         breadcrumbLabel="Curriculum"
-        imageSrc="/hero7.jpg"
       />
 
       <section className="py-20">
@@ -110,7 +109,7 @@ export default function CurriculumPage() {
               <span className="inline-block text-[0.8125rem] md:text-[0.72rem] font-bold tracking-[0.12em] md:tracking-[0.18em] uppercase text-sky mb-3">
                 Exam Structure
               </span>
-              <h2 className="mb-4 text-navy">Pattern of iSET 2026</h2>
+              <h2 className="mb-4 text-navy">Pattern of iSET</h2>
               <p className="max-w-none">
                 The examination is conducted in three progressive levels, each with its own scope and format.
               </p>
@@ -129,7 +128,7 @@ export default function CurriculumPage() {
               <div>
                 <h3 className="text-white mb-1.5">Download the Official Curriculum PDF</h3>
                 <p className="text-white/60 text-[0.9rem] max-w-none">
-                  Get the complete syllabus and brochure for iSET 2026 directly from IAME.
+                  Get the complete syllabus and brochure for iSET directly from IAME.
                 </p>
               </div>
               <div className="flex gap-3 flex-wrap">

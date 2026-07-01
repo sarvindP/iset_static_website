@@ -4,7 +4,7 @@ import { buildPageMetadata } from '@/lib/metadata';
 const REGISTER_URL = 'https://iameonline.com/login/index';
 
 export const metadata = buildPageMetadata({
-  title: 'About iSET by IAME — 20+ Years of Academic Excellence',
+  title: 'About iSET — 20+ Years of Academic Excellence',
   description:
     'Learn about iSET and IAME\'s mission to empower students LKG to Class XII through structured competitive exams, gold coin awards, and over 20 years of excellence.',
   path: '/about',
@@ -14,10 +14,9 @@ export default function AboutPage() {
   return (
     <>
       <PageHero
-        title="About iSET by IAME"
+        title="About iSET"
         description="Two decades of transforming how students learn, compete, and grow."
         breadcrumbLabel="About"
-        imageSrc="/hero3.jpg"
       />
 
       <section className="py-20">

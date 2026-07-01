@@ -3,7 +3,7 @@ import GalleryGrid from '@/components/GalleryGrid';
 import { buildPageMetadata } from '@/lib/metadata';
 
 export const metadata = buildPageMetadata({
-  title: 'iSET 2026 Gallery — IAME Events & Award Ceremonies',
+  title: 'iSET Gallery — IAME Events & Award Ceremonies',
   description:
     'Explore iSET event photos from IAME award ceremonies and student celebrations. View programme highlights and browse the full gallery on iameonline.com.',
   path: '/gallery',
@@ -16,7 +16,6 @@ export default function GalleryPage() {
         title="iSET Event Gallery"
         description="Memories from iSET events, award ceremonies, and student celebrations."
         breadcrumbLabel="Gallery"
-        imageSrc="/hero20.jpg"
       />
 
       <section className="py-20">

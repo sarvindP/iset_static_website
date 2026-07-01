@@ -4,25 +4,15 @@ type PageHeroProps = {
   title: string;
   description: string;
   breadcrumbLabel: string;
-  imageSrc: string;
-  imagePosition?: string;
 };
 
 export default function PageHero({
   title,
   description,
   breadcrumbLabel,
-  imageSrc,
-  imagePosition = 'center',
 }: PageHeroProps) {
   return (
     <section className="relative overflow-hidden bg-navy py-14 pb-12 md:py-20 md:pb-[60px] text-center">
-      <div
-        className="absolute inset-0 bg-cover bg-no-repeat"
-        style={{ backgroundImage: `url(${imageSrc})`, backgroundPosition: imagePosition }}
-        aria-hidden="true"
-      />
-      <div className="absolute inset-0 bg-black/55" aria-hidden="true" />
       <div className="relative z-10 max-w-[1140px] mx-auto px-6">
         <div className="flex justify-center gap-2 text-[0.8125rem] md:text-[0.82rem] text-white/40 mb-4 md:mb-5">
           <Link href="/" className="text-sky">

@@ -5,11 +5,11 @@ type HeroCurveDividerProps = {
 export default function HeroCurveDivider({ className = 'text-white' }: HeroCurveDividerProps) {
   return (
     <div
-      className={`absolute bottom-0 left-0 w-full leading-[0] z-20 pointer-events-none ${className}`}
+      className={`absolute bottom-0 left-0 w-full leading-[0] z-[5] pointer-events-none ${className}`}
       aria-hidden="true"
     >
       <svg
-        className="block w-full h-[56px] sm:h-[72px] md:h-[96px]"
+        className="block w-full h-[72px] sm:h-[96px] md:h-[120px]"
         viewBox="0 0 1440 120"
         preserveAspectRatio="none"
         xmlns="http://www.w3.org/2000/svg"

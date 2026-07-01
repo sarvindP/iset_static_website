@@ -119,7 +119,7 @@ const timelineItems = [
     year: '2026',
     side: 'right',
     tag: 'Now Open',
-    title: 'iSET 2026 — Register Today',
+    title: 'iSET — Register Today',
     // TODO: Exam cycle dates below are unconfirmed — pending client sign-off before publishing.
     desc: 'The latest edition of iSET continues the 20-year legacy. Prelims on November 15, 2025 → LTS & UTS on January 15, 2026 → Grand Finale on January 24, 2026 at Calicut. Open to all students LKG–XII in IAME member schools.',
     highlight: true,
@@ -134,8 +134,6 @@ export default function HistoryPage() {
         title="History of iSET"
         description="Two decades of building academic excellence across India — one student at a time."
         breadcrumbLabel="History"
-        imageSrc="/hero14.jpg"
-        imagePosition="center top"
       />
 
       <section className="py-20 bg-cream">

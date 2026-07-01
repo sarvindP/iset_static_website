@@ -34,11 +34,11 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1fr] gap-10 mb-10">
           <div>
             <Image
-              src="https://iameonline.com/assets/website/images/logo-new.png"
-              alt="IAME"
-              width={120}
-              height={52}
-              className="brightness-0 invert opacity-90 shrink-0"
+              src="/iset-logo-white.png"
+              alt="iSET — International Skill Enhancement Training"
+              width={160}
+              height={64}
+              className="shrink-0"
               style={{ height: '52px', width: 'auto' }}
             />
             <p className="text-[0.8125rem] md:text-[0.88rem] mt-3 max-w-[28ch] text-white/60 leading-relaxed">

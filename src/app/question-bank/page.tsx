@@ -1,4 +1,5 @@
 import PageHero from '@/components/PageHero';
+import QuestionBankGrid from '@/components/QuestionBankGrid';
 import { buildPageMetadata } from '@/lib/metadata';
 
 export const metadata = buildPageMetadata({
@@ -158,7 +159,6 @@ export default function QuestionBankPage() {
         title="iSET Question Bank & Exam Pattern"
         description="Sample question patterns, exam format reference, and subject-wise breakdowns."
         breadcrumbLabel="Question Bank"
-        imageSrc="/hero25.jpg"
       />
 
       <section className="py-20">
@@ -239,6 +239,8 @@ export default function QuestionBankPage() {
                 </div>
             ))}
           </div>
+
+          <QuestionBankGrid />
 
           <div className="bg-navy rounded-2xl p-10 flex items-center justify-between gap-6 mt-12 flex-wrap">
               <div>

@@ -97,22 +97,16 @@ export default function Navbar() {
         }}
       >
         <div className="flex items-center justify-between py-3.5 px-6 max-w-[1140px] mx-auto relative">
-          <Link href="/" className="flex items-center gap-3" onClick={(event) => event.stopPropagation()}>
+          <Link href="/" className="flex items-center" onClick={(event) => event.stopPropagation()}>
             <Image
-              src="https://iameonline.com/assets/website/images/logo-new.png"
-              alt="IAME Logo"
-              width={120}
-              height={48}
+              src="/iset-logo.png"
+              alt="iSET — International Skill Enhancement Training"
+              width={160}
+              height={64}
               className="shrink-0"
               style={{ height: '3rem', width: 'auto' }}
               priority
             />
-            <div className="leading-[1.15]">
-              <strong className="block font-display text-navy text-[1.1rem]">iSET 2026</strong>
-              <span className="hidden sm:block text-[0.7rem] text-muted tracking-[0.05em]">
-                International Skill Enhancement Training
-              </span>
-            </div>
           </Link>
 
           <button
