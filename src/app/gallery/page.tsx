@@ -13,7 +13,7 @@ export default function GalleryPage() {
   return (
     <>
       <PageHero
-        title="iSET Event Gallery"
+        title="Gallery"
         description="Memories from iSET events, award ceremonies, and student celebrations."
         breadcrumbLabel="Gallery"
       />
@@ -35,8 +35,8 @@ export default function GalleryPage() {
               <polyline points="21 15 16 10 5 21" />
             </svg>
             <p className="text-text text-[0.8125rem] md:text-[0.9rem] max-w-none leading-relaxed">
-              <strong>Photo Gallery</strong> — Highlights from past iSET events and award ceremonies. The full event
-              gallery is also available on the{' '}
+              <strong>Photo Gallery</strong> — Highlights from past iSET events and award ceremonies. Browse the
+              collection below or view more on the{' '}
               <a
                 href="https://iameonline.com/album"
                 target="_blank"
@@ -51,7 +51,7 @@ export default function GalleryPage() {
           <span className="inline-block text-[0.8125rem] md:text-[0.72rem] font-bold tracking-[0.12em] md:tracking-[0.18em] uppercase text-sky mb-3">
             Event Highlights
           </span>
-          <h2 className="mb-4 text-navy">iSET Event Moments</h2>
+          <h2 className="mb-4 text-navy">Gallery</h2>
           <p className="text-[0.9375rem] md:text-[1.05rem] text-muted mb-8 max-w-none leading-relaxed">
             Celebrating student achievement and participation at iSET events across the programme.
           </p>

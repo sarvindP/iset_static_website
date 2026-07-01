@@ -11,9 +11,9 @@ export const metadata: Metadata = {
   title: SITE_TITLE,
   description: SITE_DESCRIPTION,
   icons: {
-    icon: [{ url: '/logo-new.png', type: 'image/png' }],
-    shortcut: '/logo-new.png',
-    apple: '/logo-new.png',
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/favicon.ico',
   },
 };
 
