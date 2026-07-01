@@ -4,14 +4,16 @@ import './globals.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import ContactFAB from '@/components/ContactFAB';
-import { SITE_URL } from '@/lib/metadata';
+import { SITE_DESCRIPTION, SITE_TITLE, SITE_URL } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
+  title: SITE_TITLE,
+  description: SITE_DESCRIPTION,
   icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon.ico',
-    apple: '/favicon.ico',
+    icon: [{ url: '/logo-new.png', type: 'image/png' }],
+    shortcut: '/logo-new.png',
+    apple: '/logo-new.png',
   },
 };
 

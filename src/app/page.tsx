@@ -1,12 +1,11 @@
 import Link from 'next/link';
 import Hero from '@/components/Hero';
 import StatsMarquee from '@/components/StatsMarquee';
-import { buildPageMetadata } from '@/lib/metadata';
+import { buildPageMetadata, SITE_DESCRIPTION, SITE_TITLE } from '@/lib/metadata';
 
 export const metadata = buildPageMetadata({
-  title: 'iSET by IAME — Register for Skill Enhancement',
-  description:
-    'Register for iSET, IAME\'s flagship exam for students LKG to Class XII. Build reasoning, analytical skills, and exam confidence through a three-level programme.',
+  title: SITE_TITLE,
+  description: SITE_DESCRIPTION,
   path: '/',
 });
 
