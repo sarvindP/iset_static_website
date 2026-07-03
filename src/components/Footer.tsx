@@ -42,7 +42,7 @@ export default function Footer() {
               style={{ height: '52px', width: 'auto' }}
             />
             <p className="text-[0.8125rem] md:text-[0.88rem] mt-3 max-w-[28ch] text-white/60 leading-relaxed">
-              Ideal Association for Minority Education — leading the community to be always ahead.
+              International Skill Enhancement Training — shaping competence for a challenging world.
             </p>
             <div className="flex items-center gap-3 mt-4">
               {SOCIAL_LINKS.map(({ href, label, icon, boxClassName, imageClassName }) => (
@@ -139,7 +139,7 @@ export default function Footer() {
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3913.0232835344486!2d75.78530727486176!3d11.259697350094159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba65948f227aa45%3A0xe070500382808ff4!2sIdeal%20Association%20For%20Minority%20Education!5e0!3m2!1sen!2sin!4v1686496858568!5m2!1sen!2sin"
                 allowFullScreen
                 loading="lazy"
-                title="IAME Location"
+                title="iSET Location"
                 className="w-full h-40 border-none"
               />
             </div>
@@ -147,9 +147,9 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-white/10 py-5 flex flex-col sm:flex-row items-center justify-between gap-2 text-[0.8rem] text-white/45">
-          <span>© 2026 IAME — Ideal Association for Minority Education. All rights reserved.</span>
-          <a href="https://iameonline.com" target="_blank" rel="noopener noreferrer" className="text-white/45">
-            iameonline.com ↗
+          <span>© 2026 iSET — International Skill Enhancement Training. All rights reserved.</span>
+          <a href={REGISTER_URL} target="_blank" rel="noopener noreferrer" className="text-white/45">
+            Register for iSET ↗
           </a>
         </div>
       </div>

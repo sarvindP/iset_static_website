@@ -3,7 +3,7 @@ import QuestionBankGrid from '@/components/QuestionBankGrid';
 import { buildPageMetadata } from '@/lib/metadata';
 
 export const metadata = buildPageMetadata({
-  title: 'iSET Question Bank by IAME — Sample Papers & Patterns',
+  title: 'iSET Question Bank — Sample Papers & Patterns',
   description:
     'Explore the iSET question bank with sample MCQ patterns, subject breakdowns, and exam format for all grades. Access official previous-year papers via IAME.',
   path: '/question-bank',

@@ -41,7 +41,7 @@ export default function HomePage() {
                   <span className="text-[0.75rem] md:text-[0.8rem] text-white/50">Coin Award</span>
                 </div>
                 <div>
-                  <strong className="text-[1.15rem] md:text-[1.4rem] font-display font-bold text-white">50%+</strong>
+                  <strong className="text-[1.15rem] md:text-[1.4rem] font-display font-bold text-white">80%+</strong>
                   <br />
                   <span className="text-[0.75rem] md:text-[0.8rem] text-white/50">Score for LTS/UTS</span>
                 </div>
@@ -51,8 +51,7 @@ export default function HomePage() {
               <span className="inline-block text-[0.8125rem] md:text-[0.72rem] font-bold tracking-[0.12em] md:tracking-[0.18em] uppercase text-sky mb-3">About iSET</span>
               <h2 className="mb-4 text-navy">A Platform Built for Every Learner</h2>
               <p className="mb-4 max-w-none">For over 20 years, iSET has been a beacon of academic excellence, giving students from LKG to Class XII a structured platform to develop analytical thinking, logical reasoning, and conceptual clarity.</p>
-              {/* TODO: Student count ("10 Lakh+") is pending confirmed figure from IAME. */}
-              <p className="mb-7 max-w-none">More than 10 lakh students have benefited, gaining the confidence to excel in academics and competitive examinations alike — including NTSE, Olympiads, and JEE.</p>
+              <p className="mb-7 max-w-none">Over 1.1 million students have benefited, gaining the confidence to excel in academics and competitive examinations alike — including NTSE, Olympiads, and JEE.</p>
               <Link href="/about" className="inline-flex items-center gap-2 px-6 py-3 md:px-7 md:py-3.5 rounded-full bg-navy text-white font-semibold text-[0.875rem] md:text-[0.95rem] transition-all duration-250 hover:bg-[#1a2f5a]">
                 Read the Story →
               </Link>
@@ -120,9 +119,8 @@ export default function HomePage() {
 
       <section className="bg-[#F5F5F5] text-center py-20 px-6">
         <h2 className="text-navy mb-4">Ready to Register for iSET?</h2>
-        {/* TODO: Student count ("10 Lakh+") is pending confirmed figure from IAME. */}
         <p className="text-muted max-w-[52ch] mx-auto mb-9">
-          Join over 10 lakh students who have already discovered their potential through IAME&apos;s flagship exam programme.
+          Join over 1.1 million students who have already discovered their potential through the flagship iSET exam programme.
         </p>
         <a
           href={REGISTER_URL}

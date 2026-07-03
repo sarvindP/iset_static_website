@@ -6,7 +6,7 @@ const REGISTER_URL = 'https://iameonline.com/login/index';
 export const metadata = buildPageMetadata({
   title: 'About iSET — 20+ Years of Academic Excellence',
   description:
-    'Learn about iSET and IAME\'s mission to empower students LKG to Class XII through structured competitive exams, gold coin awards, and over 20 years of excellence.',
+    'Learn about iSET and its mission to empower students LKG to Class XII through structured competitive exams, gold coin awards, and over 20 years of excellence.',
   path: '/about',
 });
 
@@ -23,8 +23,7 @@ export default function AboutPage() {
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-14 items-center">
             <div className="about-img-box relative bg-gradient-to-br from-sky to-navy rounded-2xl px-6 py-9 md:px-9 md:py-12 overflow-hidden">
-              {/* TODO: Student count ("10 Lakh+") is pending confirmed figure from IAME. */}
-              <div className="font-display text-[2.75rem] md:text-[4rem] font-black text-white leading-none">10 Lakh+</div>
+              <div className="font-display text-[2.75rem] md:text-[4rem] font-black text-white leading-none">1.1 Million+</div>
               <div className="text-white/60 text-[0.8125rem] md:text-[0.9rem] mb-6 md:mb-8">students benefited since inception</div>
               <ul className="list-none">
                 {[
@@ -50,14 +49,12 @@ export default function AboutPage() {
               </span>
               <h2 className="mb-4 text-navy">What is iSET?</h2>
               <p className="mb-4 max-w-none">
-                iSET — International Skill Enhancement Training — is the flagship exam programme of the Ideal
-                Association for Minority Education (IAME). For over 20 years, it has been a beacon of academic
+                iSET — International Skill Enhancement Training — is a flagship competitive exam programme. For over 20 years, it has been a beacon of academic
                 excellence, providing students with a structured platform to develop analytical thinking, logical
                 reasoning, and conceptual clarity.
               </p>
-              {/* TODO: Student count ("10 Lakh+") is pending confirmed figure from IAME. */}
               <p className="mb-4 max-w-none">
-                More than 10 lakh students have benefited from this programme, gaining the confidence to excel in
+                Over 1.1 million students have benefited from this programme, gaining the confidence to excel in
                 academics and competitive examinations alike. iSET is not just a test — it is an opportunity to unlock
                 the limitless potential of every student.
               </p>
@@ -183,7 +180,7 @@ export default function AboutPage() {
               },
               {
                 title: 'Scholarship Opportunities',
-                desc: 'Students who score 50%+ in LTS/UTS (Grade IV and VII) qualify for scholarship awards, encouraging high performance.',
+                desc: 'Students who score 80%+ in LTS/UTS (Grade IV and VII) qualify for scholarship awards, encouraging high performance.',
                 icon: (
                   <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
                 ),

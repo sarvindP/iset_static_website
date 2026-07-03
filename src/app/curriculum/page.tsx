@@ -2,9 +2,9 @@ import PageHero from '@/components/PageHero';
 import { buildPageMetadata } from '@/lib/metadata';
 
 export const metadata = buildPageMetadata({
-  title: 'iSET Curriculum & Syllabus by IAME — LKG to XII',
+  title: 'iSET Curriculum & Syllabus — LKG to XII',
   description:
-    'View the iSET curriculum by IAME — syllabus and exam pattern for LKG to Class XII, including Prelims, LTS/UTS, Grand Finale, and subjects by grade.',
+    'View the iSET curriculum — syllabus and exam pattern for LKG to Class XII, including Prelims, LTS/UTS, Grand Finale, and subjects by grade.',
   path: '/curriculum',
 });
 
@@ -51,12 +51,12 @@ const curriculumCards = [
 
 const examPattern = [
   { num: 'Level 1', numColor: 'text-sky', title: 'Prelims', label: 'Nov 07, 2026\nAt Schools • Offline\nAll grades LKG–XII' },
-  { num: 'Level 2', numColor: 'text-sky', title: 'LTS & UTS', label: 'Dec 05, 2026\n50%+ scorers eligible\nGrade IV & VII' },
+  { num: 'Level 2', numColor: 'text-sky', title: 'LTS & UTS', label: 'Dec 05, 2026\n80%+ scorers eligible\nGrade IV & VII' },
   {
     num: 'Level 3',
     numColor: 'text-navy',
     title: 'Grand Finale',
-    label: 'Dec 30, 2026 • Venue TBC\nJunior: Grade VI–VII\nSenior: Grade VIII–XII',
+    label: 'Dec 30, 2026 • Calicut\nJunior: Grade VI–VII\nSenior: Grade VIII–XII',
   },
   { num: 'OMR', numColor: 'text-navy', title: 'Answer Format', label: 'Grade VI–XII use\nOMR sheets\nOffline examination' },
   // TODO: Gold coin award details (916 purity) pending confirmation from IAME — using generic label until confirmed.
@@ -110,7 +110,7 @@ export default function CurriculumPage() {
               </span>
               <h2 className="mb-4 text-navy">Pattern of iSET</h2>
               <p className="max-w-none">
-                The examination is conducted in three progressive levels, each with its own scope and format.
+                The examination is conducted in selected centers.
               </p>
               <div className="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-6 mt-7">
                 {examPattern.map((ep) => (

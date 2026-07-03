@@ -3,9 +3,9 @@ import GalleryGrid from '@/components/GalleryGrid';
 import { buildPageMetadata } from '@/lib/metadata';
 
 export const metadata = buildPageMetadata({
-  title: 'iSET Gallery — IAME Events & Award Ceremonies',
+  title: 'iSET Gallery — Events & Award Ceremonies',
   description:
-    'Explore iSET event photos from IAME award ceremonies and student celebrations. View programme highlights and browse the full gallery on iameonline.com.',
+    'Explore iSET event photos from award ceremonies and student celebrations. View programme highlights and browse the full gallery on iameonline.com.',
   path: '/gallery',
 });
 
@@ -20,34 +20,6 @@ export default function GalleryPage() {
 
       <section className="py-20">
         <div className="max-w-[1140px] mx-auto px-6">
-          <div className="bg-cream rounded-xl px-8 py-7 flex items-center gap-4 mb-8">
-            <svg
-              className="shrink-0 text-sky"
-              width="24"
-              height="24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              viewBox="0 0 24 24"
-            >
-              <rect x="3" y="3" width="18" height="18" rx="2" />
-              <circle cx="8.5" cy="8.5" r="1.5" />
-              <polyline points="21 15 16 10 5 21" />
-            </svg>
-            <p className="text-text text-[0.8125rem] md:text-[0.9rem] max-w-none leading-relaxed">
-              <strong>Photo Gallery</strong> — Highlights from past iSET events and award ceremonies. Browse the
-              collection below or view more on the{' '}
-              <a
-                href="https://iameonline.com/album"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sky font-semibold"
-              >
-                IAME website →
-              </a>
-            </p>
-          </div>
-
           <span className="inline-block text-[0.8125rem] md:text-[0.72rem] font-bold tracking-[0.12em] md:tracking-[0.18em] uppercase text-sky mb-3">
             Event Highlights
           </span>
@@ -57,25 +29,6 @@ export default function GalleryPage() {
           </p>
 
           <GalleryGrid />
-
-          <div className="text-center mt-12">
-            <p className="mb-5 max-w-none mx-auto">
-              Visit the full IAME event gallery for more photos and highlights from past iSET editions.
-            </p>
-            <a
-              href="https://iameonline.com/album"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-navy text-white font-semibold text-[0.95rem] transition-all duration-250 hover:bg-[#1a2f5a]"
-            >
-              <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                <rect x="3" y="3" width="18" height="18" rx="2" />
-                <circle cx="8.5" cy="8.5" r="1.5" />
-                <polyline points="21 15 16 10 5 21" />
-              </svg>
-              View Full Gallery on IAME Website
-            </a>
-          </div>
         </div>
       </section>
     </>

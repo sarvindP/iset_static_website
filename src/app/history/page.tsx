@@ -4,9 +4,9 @@ import { buildPageMetadata } from '@/lib/metadata';
 const REGISTER_URL = 'https://iameonline.com/login/index';
 
 export const metadata = buildPageMetadata({
-  title: 'The History of iSET by IAME — Two Decades of Impact',
+  title: 'The History of iSET — Two Decades of Impact',
   description:
-    'Explore the full history of iSET by IAME — founding milestones, multi-state growth, Grand Finale highlights, and over 20 years of trusted academic excellence.',
+    'Explore the full history of iSET — founding milestones, multi-state growth, Grand Finale highlights, and over 20 years of trusted academic excellence.',
   path: '/history',
 });
 
@@ -24,8 +24,7 @@ const achievements = [
     ),
   },
   {
-    // TODO: Student count ("10 Lakh+") is pending confirmed figure from IAME.
-    num: '10 Lakh+',
+    num: '1.1 Million+',
     label: 'Students Benefited',
     icon: (
       <>
@@ -78,11 +77,10 @@ const achievements = [
 
 const timelineItems = [
   {
-    // TODO: Founding year ("~2004") is pending confirmed year from IAME.
-    year: '~2004',
+    year: '2005',
     side: 'left',
     tag: 'Foundation',
-    title: 'iSET is Founded by IAME',
+    title: 'iSET is Founded',
     desc: 'The Ideal Association for Minority Education launches the International Skill Enhancement Training — a bold initiative to create a structured competitive platform for minority community schools across Kerala.',
   },
   {
@@ -111,16 +109,15 @@ const timelineItems = [
     year: 'Legacy',
     side: 'left',
     tag: 'Recognition',
-    // TODO: Student count ("10 Lakh+") is pending confirmed figure from IAME.
-    title: '10 Lakh+ Students Milestone',
-    desc: 'iSET surpasses 10 lakh (one million) cumulative student participants — a landmark that cements its status as one of the most impactful school exam programmes in India for minority community education.',
+    title: '1.1 Million+ Students Milestone',
+    desc: 'iSET surpasses 1.1 million cumulative student participants — a landmark that cements its status as one of the most impactful school exam programmes in India for minority community education.',
   },
   {
     year: '2026',
     side: 'right',
     tag: 'Now Open',
     title: 'iSET — Register Today',
-    desc: 'The latest edition of iSET continues the 20-year legacy. Prelims on November 7, 2026 → LTS & UTS on December 5, 2026 → Grand Finale (TalentX Summit) on December 30, 2026. Open to all students LKG–XII in IAME member schools.',
+    desc: 'The latest edition of iSET continues the 20-year legacy. Prelims on November 7, 2026 → LTS & UTS on December 5, 2026 → Grand Finale (TalentX Summit) on December 30, 2026, Calicut. Open to all students LKG–XII in IAME member schools.',
     highlight: true,
     showRegister: true,
   },

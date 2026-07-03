@@ -7,12 +7,11 @@ export type GalleryImage = {
 
 const GALLERY_FOLDER = '/image_gallary';
 
-export const GALLERY_IMAGES: GalleryImage[] = Array.from({ length: 30 }, (_, index) => {
-  const number = index + 1;
-  const filename = `iset-event-${String(number).padStart(2, '0')}.jpg`;
-
-  return {
-    src: `${GALLERY_FOLDER}/${filename}`,
-    alt: `iSET event photo ${number}`,
-  };
-});
+export const GALLERY_IMAGES: GalleryImage[] = [
+  { src: `${GALLERY_FOLDER}/iset-event-01.jpg`, alt: 'iSET event photo 1' },
+  { src: `${GALLERY_FOLDER}/iset-event-03.jpg`, alt: 'iSET event photo 2' },
+  { src: `${GALLERY_FOLDER}/iset-event-10.jpg`, alt: 'iSET event photo 3' },
+  { src: `${GALLERY_FOLDER}/iset-event-11.jpg`, alt: 'iSET event photo 4' },
+  { src: `${GALLERY_FOLDER}/iset-event-12.jpg`, alt: 'iSET event photo 5' },
+  { src: `${GALLERY_FOLDER}/iset-event-23.jpg`, alt: 'iSET event photo 6' },
+];
