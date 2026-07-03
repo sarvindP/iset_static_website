@@ -233,7 +233,6 @@ npm run dev
 
 Several items are marked with `// TODO` in the code and should be confirmed before publishing final copy:
 
-- Exam cycle dates (Nov 2025 / Jan 2026)
 - Student count (“10 Lakh+”)
 - Founding year (~2004)
 - Gold coin award (916 purity)

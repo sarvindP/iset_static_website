@@ -120,8 +120,7 @@ const timelineItems = [
     side: 'right',
     tag: 'Now Open',
     title: 'iSET — Register Today',
-    // TODO: Exam cycle dates below are unconfirmed — pending client sign-off before publishing.
-    desc: 'The latest edition of iSET continues the 20-year legacy. Prelims on November 15, 2025 → LTS & UTS on January 15, 2026 → Grand Finale on January 24, 2026 at Calicut. Open to all students LKG–XII in IAME member schools.',
+    desc: 'The latest edition of iSET continues the 20-year legacy. Prelims on November 7, 2026 → LTS & UTS on December 5, 2026 → Grand Finale (TalentX Summit) on December 30, 2026. Open to all students LKG–XII in IAME member schools.',
     highlight: true,
     showRegister: true,
   },
