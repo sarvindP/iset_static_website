@@ -85,8 +85,13 @@ npm run lint
 
 ```
 iset-website/
-├── public/                 # Static assets (hero images, social icons)
+├── public/                 # Static assets
+│   ├── favicon.ico
+│   ├── iset-logo.png
+│   ├── iset-logo-white.png
 │   ├── hero*.jpg
+│   ├── image_gallary/      # Event gallery photos
+│   ├── question_bank/      # Downloadable question papers (PDFs)
 │   └── social/
 ├── src/
 │   ├── app/                # Pages (Next.js App Router)
@@ -102,9 +107,16 @@ iset-website/
 │   ├── components/         # Reusable UI components
 │   │   ├── Navbar.tsx
 │   │   ├── Footer.tsx
+│   │   ├── Hero.tsx
+│   │   ├── HeroCurveDivider.tsx
 │   │   ├── PageHero.tsx
 │   │   ├── GalleryGrid.tsx
+│   │   ├── QuestionBankGrid.tsx
+│   │   ├── ContactFAB.tsx
+│   │   ├── StatsMarquee.tsx
 │   │   └── ...
+│   ├── data/
+│   │   └── questionBank.ts # Question bank file list & metadata
 │   └── lib/                # Shared helpers
 │       ├── metadata.ts     # SEO titles, descriptions, canonical URLs
 │       └── gallery-images.ts
@@ -227,7 +239,6 @@ Several items are marked with `// TODO` in the code and should be confirmed befo
 - Gold coin award (916 purity)
 - Grand Finale 2024 venue & date
 - Question bank subject percentages
-- Gallery placeholder images (generic captions until real photos are provided)
 
 Search the codebase for `TODO` to find all instances.
 
