@@ -131,7 +131,7 @@ export default function HistoryPage() {
     <>
       <PageHero
         title="History of iSET"
-        description="Two decades of building academic excellence across India — one student at a time."
+        description="Two decades of building academic excellence across India."
         breadcrumbLabel="History"
       />
 
