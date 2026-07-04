@@ -59,7 +59,6 @@ const examPattern = [
     label: 'Dec 30, 2026 • Calicut\nJunior: Grade VI–VII\nSenior: Grade VIII–XII',
   },
   { num: 'OMR', numColor: 'text-navy', title: 'Answer Format', label: 'Grade VI–XII use\nOMR sheets\nOffline examination' },
-  // TODO: Gold coin award details (916 purity) pending confirmation from IAME — using generic label until confirmed.
   { num: 'Gold', numColor: 'text-navy', title: 'Gold Coin Award', label: 'Grand Finale winners\n+ Trophies & Certificates' },
 ];
 

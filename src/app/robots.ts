@@ -1,4 +1,7 @@
 import { MetadataRoute } from 'next';
+import { SITE_URL } from '@/lib/metadata';
+
+export const dynamic = 'force-static';
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -6,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://iset-website.vercel.app/sitemap.xml',
+    sitemap: `${SITE_URL}/sitemap.xml`,
   };
 }

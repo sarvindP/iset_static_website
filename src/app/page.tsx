@@ -34,7 +34,6 @@ export default function HomePage() {
                   <br />
                   <span className="text-[0.75rem] md:text-[0.8rem] text-white/50">Exam Levels</span>
                 </div>
-                {/* TODO: Gold coin award details (916 purity) pending confirmation from IAME — using generic label until confirmed. */}
                 <div>
                   <strong className="text-[1.15rem] md:text-[1.4rem] font-display font-bold text-white">Gold</strong>
                   <br />
@@ -71,7 +70,6 @@ export default function HomePage() {
               { title: 'Competitive Preparedness', desc: 'Equips students with the confidence to face exams like NTSE, Olympiads, and JEE — building a habit of excellence early.', icon: <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" /> },
               { title: 'Scientific Curiosity', desc: 'Develops an inquisitive mindset that is essential for innovation, lifelong learning, and careers in STEM and beyond.', icon: <><circle cx="12" cy="12" r="5" /><line x1="12" y1="1" x2="12" y2="3" /><line x1="12" y1="21" x2="12" y2="23" /><line x1="4.22" y1="4.22" x2="5.64" y2="5.64" /><line x1="18.36" y1="18.36" x2="19.78" y2="19.78" /><line x1="1" y1="12" x2="3" y2="12" /><line x1="21" y1="12" x2="23" y2="12" /><line x1="4.22" y1="19.78" x2="5.64" y2="18.36" /><line x1="18.36" y1="5.64" x2="19.78" y2="4.22" /></> },
               { title: 'Prestigious Opportunities', desc: 'Top institutions and universities recognize the value of competitive excellence — iSET opens doors that standard exams cannot.', icon: <><path d="M18 8h1a4 4 0 0 1 0 8h-1" /><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z" /><line x1="6" y1="1" x2="6" y2="4" /><line x1="10" y1="1" x2="10" y2="4" /><line x1="14" y1="1" x2="14" y2="4" /></> },
-              // TODO: Gold coin award details (916 purity) pending confirmation from IAME — using generic wording until confirmed.
               { title: 'Gold Coin & Top Awards', desc: 'Grand Finale winners receive gold coin awards, trophies, and certificates — real recognition for real achievement.', icon: <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /> },
             ].map((b) => (
               <div key={b.title} className="bg-white border border-border rounded-[10px] p-8 shadow-card transition-all duration-250 hover:-translate-y-1 hover:shadow-card-hover">

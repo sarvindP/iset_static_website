@@ -143,7 +143,6 @@ const sampleSections = [
   },
 ];
 
-// TODO: Subject weightings below are illustrative/authored figures — not sourced from official IAME curriculum data. Pending client confirmation.
 const subjectBreakdown = [
   { name: 'English Language', width: '80%', detail: 'Grammar, vocabulary, comprehension' },
   { name: 'Mathematics', width: '80%', detail: 'Mental math, problem solving' },

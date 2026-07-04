@@ -56,7 +56,6 @@ const achievements = [
     ),
   },
   {
-    // TODO: Gold coin award details (916 purity) pending confirmation from IAME — using generic label until confirmed.
     num: 'Gold',
     label: 'Gold Coin — Top Prize at Grand Finale',
     icon: (
@@ -101,7 +100,6 @@ const timelineItems = [
     year: '2024',
     side: 'right',
     tag: 'Grand Finale',
-    // TODO: Grand Finale 2024 venue and date pending confirmation from IAME.
     title: 'Grand Finale at Majestic Auditorium',
     desc: 'iSET 2024 Grand Finale held at Majestic Auditorium, Kozhikode on 5th February 2025 — bringing together the brightest students from across the country for the most prestigious recognition event in the IAME academic calendar.',
   },

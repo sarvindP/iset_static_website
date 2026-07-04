@@ -164,7 +164,6 @@ export default function AboutPage() {
               },
               {
                 title: 'Prestigious Gold Coin Awards',
-                // TODO: Gold coin award details (916 purity) pending confirmation from IAME — using generic wording until confirmed.
                 desc: 'Grand Finale winners are awarded gold coin awards, trophies, and certificates — tangible recognition of achievement.',
                 icon: (
                   <>
