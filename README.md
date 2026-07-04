@@ -16,7 +16,7 @@ npm install
 npm run dev
 ```
 
-Open **http://localhost:3000** in your browser. The dev server reloads automatically when you edit files.
+Open **[http://localhost:3000](http://localhost:3000)** in your browser. The dev server reloads automatically when you edit files.
 
 To stop the server, press `Ctrl+C` in the terminal.
 
@@ -24,12 +24,14 @@ To stop the server, press `Ctrl+C` in the terminal.
 
 ## Tech stack
 
-| Tool | Version |
-|------|---------|
-| [Next.js](https://nextjs.org/) | 15 (App Router) |
-| [React](https://react.dev/) | 19 |
-| [TypeScript](https://www.typescriptlang.org/) | 5 |
-| [Tailwind CSS](https://tailwindcss.com/) | 3 |
+
+| Tool                                          | Version         |
+| --------------------------------------------- | --------------- |
+| [Next.js](https://nextjs.org/)                | 15 (App Router) |
+| [React](https://react.dev/)                   | 19              |
+| [TypeScript](https://www.typescriptlang.org/) | 5               |
+| [Tailwind CSS](https://tailwindcss.com/)      | 3               |
+
 
 ---
 
@@ -78,7 +80,7 @@ This reads `package.json` and installs packages into `node_modules/`.
 npm run dev
 ```
 
-Then open: **http://localhost:3000**
+Then open: **[http://localhost:3000](http://localhost:3000)**
 
 The dev server hot-reloads when you save files. If port 3000 is busy, Next.js uses the next free port (for example, 3001) and prints the URL in the terminal.
 
@@ -96,7 +98,7 @@ Preview the built site locally with any static file server:
 npx serve out
 ```
 
-Then open the URL shown in the terminal (usually **http://localhost:3000**).
+Then open the URL shown in the terminal (usually **[http://localhost:3000](http://localhost:3000)**).
 
 > **Note:** `npm start` is for server-rendered Next.js apps and does **not** apply here. Use `npx serve out` (or upload the `out/` folder to your host) after building.
 
@@ -156,14 +158,16 @@ iset-website/
 
 ## Pages
 
-| Route | Description |
-|-------|-------------|
-| `/` | Home |
-| `/about` | About iSET & IAME |
-| `/curriculum` | Syllabus & exam pattern |
-| `/gallery` | Event photo gallery |
-| `/history` | Timeline & milestones |
+
+| Route            | Description                    |
+| ---------------- | ------------------------------ |
+| `/`              | Home                           |
+| `/about`         | About iSET & IAME              |
+| `/curriculum`    | Syllabus & exam pattern        |
+| `/gallery`       | Event photo gallery            |
+| `/history`       | Timeline & milestones          |
 | `/question-bank` | Sample questions & exam format |
+
 
 SEO files (auto-generated):
 
@@ -197,16 +201,12 @@ If you add a **custom domain**, update the site URL in:
 The live site at [isetonline.in](https://isetonline.in) is deployed as static files.
 
 1. Build locally or in CI:
-
-   ```bash
+  ```bash
    npm install
    npm run build
-   ```
-
-2. Upload the contents of the **`out/`** folder to your web root (for example, `public_html/` on cPanel).
-
+  ```
+2. Upload the contents of the `**out/**` folder to your web root (for example, `public_html/` on cPanel).
 3. Ensure `public/.htaccess` is included in the upload. It is copied into `out/` during the build and handles HTTPS redirects, custom 404, and directory listing.
-
 4. Confirm the site loads at your domain and that routes like `/about/` and `/gallery/` work (trailing slashes are enabled).
 
 ### Deploying to Vercel
@@ -217,12 +217,12 @@ Static export works on Vercel with default Next.js settings:
 2. Create a new project and connect the repo.
 3. Use these settings:
 
-   | Setting | Value |
-   |---------|-------|
-   | Framework | Next.js |
-   | Build command | `npm run build` |
-   | Output directory | `out` |
-   | Install command | `npm install` |
+  | Setting          | Value           |
+  | ---------------- | --------------- |
+  | Framework        | Next.js         |
+  | Build command    | `npm run build` |
+  | Output directory | `out`           |
+  | Install command  | `npm install`   |
 
 4. Deploy. Vercel rebuilds on every push to `main`.
 
@@ -242,13 +242,13 @@ Breakpoint is defined in `tailwind.config.js` as `nav: '1140px'`.
 
 ### `Cannot find module './XXX.js'` or runtime webpack errors
 
-Usually a **stale build cache** or **multiple dev servers** running.
+Usually a **stale build cache**, **multiple dev servers**, or a **Next.js 15.5 devtools bug on Windows**.
 
 **Fix (Windows PowerShell):**
 
 ```powershell
 Get-Process node -ErrorAction SilentlyContinue | Stop-Process -Force
-Remove-Item -Recurse -Force .next
+npm run clean
 npm run dev
 ```
 
@@ -256,11 +256,13 @@ npm run dev
 
 ```bash
 pkill node
-rm -rf .next
+npm run clean
 npm run dev
 ```
 
 Then hard-refresh the browser: `Ctrl+Shift+R` (Windows) or `Cmd+Shift+R` (Mac).
+
+> **Note:** This project pins Next.js to `15.5.18` and disables devtools segment explorer in `next.config.mjs` to avoid the `__webpack_modules__[moduleId] is not a function` error during local development.
 
 ### Port 3000 already in use
 
@@ -279,17 +281,16 @@ npm run dev
 
 ## Scripts reference
 
-| Command | Purpose |
-|---------|---------|
-| `npm install` | Install dependencies |
-| `npm run dev` | Start development server at http://localhost:3000 |
-| `npm run build` | Create static production build in `out/` |
-| `npx serve out` | Preview the production build locally |
-| `npm run lint` | Run ESLint |
+
+| Command         | Purpose                                                                    |
+| --------------- | -------------------------------------------------------------------------- |
+| `npm install`   | Install dependencies                                                       |
+| `npm run clean` | Delete `.next/` dev cache                                                  |
+| `npm run dev`   | Start development server at [http://localhost:3000](http://localhost:3000) |
+| `npm run build` | Create static production build in `out/`                                   |
+| `npx serve out` | Preview the production build locally                                       |
+| `npm run lint`  | Run ESLint                                                                 |
+
 
 ---
 
-## Support links
-
-- IAME website: [https://iameonline.com](https://iameonline.com)
-- iSET registration: [https://iameonline.com/login/index](https://iameonline.com/login/index)
